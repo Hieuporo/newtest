@@ -1,0 +1,234 @@
+/* Viet Code o phan WEBSITE BODY */
+
+:root{
+    --primary-color: rgb(43,43,43);
+    --secondary-color:lightblue;
+    --red-orange:#f6462e;
+    --blue:#1877f2;
+}
+@font-face {
+    font-family: bahnschrift;
+    src: url(/Assets/Fonts/bahnschrift.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: bahnschrift;
+    
+}
+
+/* WEBSITE HEADER, FOOTER */
+
+header {
+    position: fixed;
+    z-index: 100;
+}
+header .nav_logo{
+    height: 100%;
+    display: inline-block;
+}
+header .nav_logo img{
+    width: 100px;
+    height: 100%;
+}
+nav .white_bckg{
+    height: 100%;
+    border-radius: 53px;
+}
+header nav{
+    width: 100%;
+    height: 53px;
+    background-color: var(--primary-color);
+    position: fixed;
+}
+#nav_list{
+    display: inline-block;
+    position: fixed;
+    padding-left: 10px;
+}
+#nav_list ul li{
+    display: inline-block;
+}
+#nav_list ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 53px;
+    display: block;
+    transition: all ease-in-out 0.3s;
+}
+#nav_list ul li a:hover{
+    color: var(--red-orange);
+    border-bottom: 2px solid var(--red-orange);
+}
+.UTC_logo{
+    height: 53px;
+    width: 53px;
+    float: right;
+}
+.UTC_logo img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.footer__content {
+    padding-top: 26px;
+    padding-bottom: 26px    ;
+}
+.footer__heading {
+
+}
+.footer__list {
+    margin-top: 12px;
+}
+.footer__list-item {
+    margin-top: 12px;
+}
+.footer__list-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__list-link:hover {
+    color: #f6462e;
+}
+
+.footer__download {
+    display: flex;
+    margin-top: 12px;
+}
+.footer__download-qr {
+    width: 70px;
+    height: 70px;
+}
+.footer__download-apps {
+    margin-top: 12px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__download-apps-link {
+    text-decoration: none;
+}
+.footer__download-app-img {
+   width: 85px;
+   height: 20px;
+}
+
+.footer__bottom {
+    background-color:rgba(0,0,0,.65);
+    background: #f5f5f5;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.footer__text {
+    font-size: 16px;
+    padding-top: 12px;
+}
+
+ul{
+    list-style: none;
+}
+
+.white_bckg{
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+/* WEBSITE BODY */
+/* Viet Code o duoi nay */
+
+
+#content{
+    padding: 53px 0 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    background-image: linear-gradient(180deg,white,white,white,white,var(--secondary-color));
+}
+#banner{
+    padding-top: 53px;
+    display: block;
+    box-sizing: content-box;
+    height: 300px;
+    width: 100%;
+    background-image: url(../Images/rybrook-lamborghini-huracan-evo-banner-2-1920x650.jpg);
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-color: #333;
+}
+.login_wrapper{
+    display: flex;
+    width: 70%;
+    align-self: center;
+    padding: 50px 0;
+    margin: 50px 0;
+    border: 5px #333 solid;
+}
+
+#content .login_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_container h1{
+    font-size: 3rem;
+    color: orange;
+    margin-bottom: 50px;
+}
+.login_container h2{
+    margin-bottom: 25px;
+}
+.login_container table{
+    background-image: linear-gradient(45deg,white,var(--secondary-color),var(--secondary-color));
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.login_container table input{
+    padding: 3px 8px;
+    border-radius: 0%;
+    border-color: var(--primary-color);
+    border-width: 3px;
+    border-style: solid;
+}
+td h4{
+    padding-right: 10px;
+}
+
+.sign_up_text{
+    color: var(--blue);
+    font-weight:lighter;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0 40px 0 0;
+}
+.sign_up_text:hover{
+    text-decoration: underline;
+}
+.submit_btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 20px;
+    border: 0;
+    font-family: bahnschrift;
+    font-size: 1rem;
+}
+.submit_btn:hover{
+    color: var(--red-orange);
+    cursor: pointer;
+}

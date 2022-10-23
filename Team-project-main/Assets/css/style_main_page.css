@@ -1,0 +1,553 @@
+@font-face {
+    font-family: bahnschrift;
+    src: url(/Assets/Fonts/bahnschrift.ttf);
+}
+
+html {
+    font-family: bahnschrift;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(43,43,43);
+    position: fixed;
+    z-index: 1;
+    top: 0 ;
+    left: 0;
+    right: 0;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.header__navbar-logo {
+    width: 108px;
+    height: 56px ;
+}
+
+.header__navbar-search {
+    width: 620px;
+    height: 36px;
+    background-color: white;
+    display: flex;
+    border-radius: 16px;
+    margin-top: 8px;
+}
+
+.header__navbar-search-icon {
+    width: 36px;
+    height: 36px;
+    font-weight: 100;
+    color: black;
+    opacity: 0.4;
+    text-align: center;
+    line-height: 36px;
+}
+
+.header__navbar-search-wrap {
+    position: relative;
+}
+
+.header__navbar-search-input {
+    width: 500px;
+    height: 100%;
+    border-color: none;
+    outline: none;
+    border: none;
+    position: relative;
+}
+
+.header__navbar-search-input:focus ~ .header__navbar-history {
+    display: block;
+}
+
+.header__navbar-history {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: -36px;
+    border-radius: 10px;
+    width: 520px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px rgb(189 189 189);
+    display: none;
+}
+
+.header__navbar-history li {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.header__navbar-history li:hover {
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.header__navbar-history li:first-child:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.header__navbar-history li:last-child:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.header__navbar-search-filter   {
+    margin: 3px 0;
+    border-left: 1px solid rgba(0, 0, 0,0.2);
+    padding-left: 16px;
+    flex: 1;
+    display: flex;
+    color: rgba(0, 0, 0,0.5);
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.header__navbar-search-filter-text   {
+    font-size: 14px;
+}
+
+.header__navbar-search-filter-icon  {
+    color: rgba(0, 0, 0,0.6);
+    padding-left: 8px;
+}
+
+.header__navbar-list {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.header__navbar-item {
+    color: white;
+    font-size: 14px;
+    margin: 8px 8px 0;
+}
+
+.header__navbar-item-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.header__navbar-item-link:hover {
+    opacity: 0.7;
+}
+.header__navbar-item-has-border::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid white;
+    opacity: 0.2;
+    padding-left: 10px ;
+    height: 16px;
+    transform: translateX(-70%) translateY(-100%);
+}
+
+.navbar-main {
+    height: 48px;
+    width: 100%;
+}
+
+.navbar-main-list {
+}
+
+.navbar-main-item {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navbar-main-item-link {
+    padding: 0 16px;
+    text-decoration: none;
+    color: white;
+    line-height: 42px;
+}
+.navbar-main-item:hover {
+    border-bottom: 1px solid #f6462e;
+
+}
+.navbar-main-item:hover .navbar-main-item-link {
+    color: #f6462e;
+}
+
+.slideshow-container {
+    width: 100%;
+    height:629px;
+    overflow: hidden;
+    position: relative;
+    margin: 120px auto 10px;
+  }
+  
+.slider-img {
+    width: 100%;
+    height: 629px;
+}
+
+.slider--nav {
+    position: relative;
+    top: -60px;
+}
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: white;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.content {
+    padding-top: 64px;
+}
+
+.content-heading {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.content-sub-heading {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 18px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.content-list-service {
+    margin-top: 34px;
+}
+
+.content-list-service-item {
+    display: flex;
+}
+
+.content-list-service-item:hover  {
+    cursor: pointer;
+}   
+
+.content-list-service-icon {
+    font-size: 34px;
+    width: 108px;
+    height: 80px;
+    background-color: lightblue ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrap-service {
+    background-color: gray;
+}
+
+.content-list-service-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    user-select: none;
+}
+
+.content-2 {
+    padding-top: 54px;
+    padding-bottom: 42px;
+}
+
+.content-heading-list {
+    font-weight: 500;
+    margin: 16px;
+    text-align: center;
+}
+
+.content-list-car {
+
+}
+
+.content-list-car-item {
+    border: 1px solid #f4f4f4;
+    box-shadow: 0 1px 3px -2px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+.content-list-car-item:hover .content-car-img {
+    scale: 1.2;
+    transition: scale linear 0.25s;
+}
+
+.content-car-img-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-car-img {
+    width: 100%;
+}
+
+.content-car-text-box {
+    padding-top: 16px ;
+    text-align: center;
+
+}
+
+.content-car-price a {
+    color: red;
+    text-decoration: none;
+}
+
+.content-car-name {
+    font-weight: 600;
+}
+
+.content-car-price {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.content-car-button {
+    width: 140px;
+    margin: 16px 0 ;
+    transform: translateX(50%);
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 2px;
+
+}
+
+.content-car-button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.content-box {
+    width: 800px;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+.content-3 {
+    background-color: lightblue;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background-image: url('../Images/imgbg.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-preorder-heading {
+    padding: 32px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+.content-preorder-name {
+    width: 100%;
+}
+
+.content-preorder-box-input input {
+    padding: 12px;
+    border: 1px solid rgb(0 0 0 / 12%);
+}
+
+.content-preorder-phone {
+    width: 100%;
+}
+
+.content-preorder-mail {
+    width: 100%;
+
+}
+
+.content-preorder-name-car {
+    width: 100%;
+
+}
+
+.content-preorder-btn {
+    background-color: #f6462e;
+    border: none;
+    display: block;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    float: right;   
+    margin-bottom: 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+.content-preorder-btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    outline: none;
+}
+
+.map {
+    width: 100%;
+}
+
+
+
+.footer__content {
+    padding-top: 26px;
+    padding-bottom: 26px    ;
+}
+.footer__heading {
+
+}
+.footer__list {
+    margin-top: 12px;
+}
+.footer__list-item {
+    margin-top: 12px;
+}
+.footer__list-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__list-link:hover {
+    color: #f6462e;
+}
+
+.footer__download {
+    display: flex;
+    margin-top: 12px;
+}
+.footer__download-qr {
+    width: 70px;
+    height: 70px;
+}
+.footer__download-apps {
+    margin-top: 12px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__download-apps-link {
+    text-decoration: none;
+}
+.footer__download-app-img {
+   width: 85px;
+   height: 20px;
+}
+
+.footer__bottom {
+    background-color:rgba(0,0,0,.65);
+    background: #f5f5f5;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.footer__text {
+    font-size: 16px;
+    padding-top: 12px;
+}
+
+

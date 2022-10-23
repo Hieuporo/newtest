@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ FastMotor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/css/grid.css">
+    <link rel="stylesheet" href="./Assets/css/style_main_page.css">
+    <link rel="stylesheet" href="./Assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./Assets/font/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__navbar grid wide">
+            <a href="#">
+            <img src="./Assets/Images/304956936_618765363064660_6048081306857586318_n.jpg" alt="" class="header__navbar-logo">
+            </a>
+            <div class="header__navbar-search">
+                <div class="header__navbar-search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+               <div class="header__navbar-search-wrap">
+                <input type="text" name="" id="" class="header__navbar-search-input" placeholder="Nhập tên xe cần tìm" >
+                <ul class="header__navbar-history">
+                    <li class="header__navbar-history-item">Gr Supra</li>
+                    <li class="header__navbar-history-item">Highlander</li>
+                    <li class="header__navbar-history-item">Innova</li>
+                    <li class="header__navbar-history-item">Vios</li>
+                </ul>
+               </div>
+                <div class="header__navbar-search-filter">
+                    <div class="header__navbar-search-filter-text">Lọc</div>
+                    <div class="header__navbar-search-filter-icon">
+                        <i class="ti-filter"></i>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item">
+                    <a href="./FASTMOTOR_SIGN_UP.html" class="header__navbar-item-link">Đăng ký</a>
+                </li>
+                <li class="header__navbar-item header__navbar-item-has-border">
+                    <a href="./FASTMOTOR_SIGN_IN.html" class="header__navbar-item-link">Đăng nhập</a>
+                    <i class="fa-regular fa-user"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="grid wide navbar-main">
+            <ul class="navbar-main-list">
+                <li class="navbar-main-item">
+                    <a class="navbar-main-item-link" href="#">Trang chủ</a>
+                </li>
+                <li class="navbar-main-item">
+                    <a class="navbar-main-item-link" href="./FASTMOTOR_PRODUCTS.html">Sản phẩm</a>
+                </li>
+                <li class="navbar-main-item">
+                    <a class="navbar-main-item-link" href="./FASTMOTOR_CUSTOMER_SERVICE.html">Chính sách bảo hành</a>
+                </li>
+                <li class="navbar-main-item">
+                    <a class="navbar-main-item-link" href="./FASTMOTOR_HELP.html">Tư vấn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img class="slider-img" src="./Assets/Images/img1pro.jpeg">
+        </div>
+      
+        <div class="mySlides fade">
+          <img class="slider-img" src="./Assets/Images/img2pro.png">
+        </div>
+      
+        <div class="mySlides fade">
+          <img class="slider-img" src="./Assets/Images/img3pro.jpg">
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div class="slider--nav"  style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+      </div>
+    <div class="content">
+        <div class="content-1 grid wide">
+            <h1 class="content-heading">FAST MOTOR</h1>
+            <div class="content-sub-heading">Ở đây chúng tôi luôn có dịch vụ tốt nhất cho các bạn!</div>
+            <div class="content-list-service row">
+                <div class="content-list-service-item col c-4">
+                    <div class="content-list-service-icon">
+                        <div class="ti-money"></div>
+                    </div>
+                    <div class="content-list-service-text">Yêu cầu báo giá</div>
+                </div>
+                <div class="content-list-service-item col c-4">
+                    <div class="content-list-service-icon">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="content-list-service-text">Thủ tục trả góp</div>
+                </div>
+                <div class="content-list-service-item col c-4">
+                    <div class="content-list-service-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <div class="content-list-service-text">Bảng giá xe</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-2 grid wide">
+             <h1 class="content-heading-list">Danh mục sản phẩm</h1>  
+            <div class="content-list-car row">
+                <div class="content-list-car-item col c-3">
+                    <div class="content-car-img-box">
+                        <img src="./Assets/Images/anh-dai-dien-oto-toyota-vios-tinbanxe.png" alt="" class="content-car-img">
+                    </div>
+                    <div class="content-car-text-box">
+                        <div class="content-car-name">Toyota Vios</div>
+                        <div class="content-car-price">Giá từ:
+                            <a href=""> 542.000.000 VND</a>
+                        </div>
+                    </div>
+                    <button class="content-car-button">Đặt hàng ngay</button>
+                </div>
+                <div class="content-list-car-item col c-3">
+                    <div class="content-car-img-box">
+                        <img src="./Assets/Images/anh-dai-dien-toyota-gr-supra-tinbanxe.png" alt="" class="content-car-img">
+                    </div>
+                    <div class="content-car-text-box">
+                        <div class="content-car-name">Toyota GR Supra</div>
+                        <div class="content-car-price">Giá từ:
+                            <a href=""> 3,840,000,000 VND</a>
+                        </div>
+                    </div>
+                    <button class="content-car-button">Đặt hàng ngay</button>
+                </div>
+                <div class="content-list-car-item col c-3">
+                    <div class="content-car-img-box">
+                        <img src="./Assets/Images/anh-dai-dien-toyota-highlander-tinbanxe.png" alt="" class="content-car-img">
+                    </div>
+                    <div class="content-car-text-box">
+                        <div class="content-car-name">Toyota Highlander </div>
+                        <div class="content-car-price">Giá từ:
+                            <a href=""> 4,413,000,000 VND</a>
+                        </div>
+                    </div>
+                    <button class="content-car-button">Đặt hàng ngay</button>
+                </div>
+                <div class="content-list-car-item col c-3">
+                    <div class="content-car-img-box">
+                        <img src="./Assets/Images/anh-dai-dien-toyota-innova-tinbanxe.png" alt="" class="content-car-img">
+                    </div>
+                    <div class="content-car-text-box">
+                        <div class="content-car-name">Toyota Innova</div>
+                        <div class="content-car-price">Giá từ:
+                            <a href=""> 750,000,000 VND</a>
+                        </div>
+                    </div>
+                    <button class="content-car-button">Đặt hàng ngay</button>
+                </div>
+                <div class="content-list-car-item col c-3">
+                    <div class="content-car-img-box">
+                        <img src="./Assets/Images/anh-dai-dien-toyota-prius-tinbanxe.png" alt="" class="content-car-img">
+                    </div>
+                    <div class="content-car-text-box">
+                        <div class="content-car-name">Toyota Prius</div>
+                        <div class="content-car-price">Giá từ:
+                            <a href=""> 1,000,000,000 VND</a>
+                        </div>
+                    </div>
+                    <button class="content-car-button">Đặt hàng ngay</button>
+                </div>
+                <div class="content-list-car-item col c-3">
+                    <div class="content-car-img-box">
+                        <img src="./Assets/Images/anh-dai-dien-toyota-rush-tinbanxe.png" alt="" class="content-car-img">
+                    </div>
+                    <div class="content-car-text-box">
+                        <div class="content-car-name">Toyota Rush</div>
+                        <div class="content-car-price">Giá từ:
+                            <a href=""> 634,000,000 VND</a>
+                        </div>
+                    </div>
+                    <button class="content-car-button">Đặt hàng ngay</button>
+                </div>
+          
+                <div class="content-list-car-item col c-3">
+                    <div class="content-car-img-box">
+                        <img src="./Assets/Images/anh-dai-dien-toyota-sienna-tinbanxe.png" alt="" class="content-car-img">
+                    </div>
+                    <div class="content-car-text-box">
+                        <div class="content-car-name">Toyota Sienna</div>
+                        <div class="content-car-price">Giá từ:
+                            <a href=""> 4,000,000,000 VND</a>
+                        </div>
+                    </div>
+                    <button class="content-car-button">Đặt hàng ngay</button>
+                </div>
+                <div class="content-list-car-item col c-3">
+                    <div class="content-car-img-box">
+                        <img src="./Assets/Images/toyota-land-cruiser-2020.png" alt="" class="content-car-img">
+                    </div>
+                    <div class="content-car-text-box">
+                        <div class="content-car-name">Toyota Land Cruiser</div>
+                        <div class="content-car-price">Giá từ:
+                            <a href=""> 4,196,000,000 VND</a>
+                        </div>
+                    </div>
+                    <button class="content-car-button">Đặt hàng ngay</button>
+                </div>
+              
+            </div>
+        </div>
+        <div class="content-3">
+            <div class="content-box">
+                <h1 class="content-preorder-heading">Đăng kí đặt xe trước</h1>
+                <div class="content-preorder">
+                    <div class="content-preorder-box-input">
+                        <div class="row">
+                            <div class="content-preorder-box-input col c-6">
+                                <input placeholder="Họ tên" type="text" name="" id="" class="mt-12 content-preorder-name">
+                            </div>
+                            <div class="content-preorder-box-input col c-6">
+                                <input placeholder="Số điện thoại" type="text" name="" id="" class="mt-12 content-preorder-phone">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="content-preorder-box-input col c-12">
+                                <input placeholder="Gmail" type="email" name="" id="" class="mt-12 content-preorder-mail">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="content-preorder-box-input col c-12">
+                               <input placeholder="Nhập dòng xe đặt trước" type="text" name="" id="" class="mt-12 content-preorder-name-car">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="content-preorder-btn mt-12">Đăng kí ngay</button>
+
+                    <div class="clear"></div>
+                </div>
+               
+        </div>
+        </div>
+    </div>
+    <img src="./Assets/Images/Screenshot 2022-09-24 230211.png" alt="" class="map">
+    <footer class="footer">
+        <div class="grid wide footer__content">
+            <div class="row">
+                <div class="col c-3">
+                    <h3 class="footer__heading">Sản phẩm</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Xe du lịch</a>
+                        </li>
+                        <li class="footer__list-item">    
+                            <a href="" class="footer__list-link">Xe SUV</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Xe chuyên dụng, tải nhẹ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col c-3">
+                    <h3 class="footer__heading">Dịch vụ</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Phụ tùng & Phụ kiện chính hãng</a>
+                        </li>
+                        <li class="footer__list-item">   
+                            <a href="" class="footer__list-link">Chăm sóc khách hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col c-3">
+                    <h3 class="footer__heading">Theo dõi</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">
+                                <i class="footer__item-icon fa-brands fa-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">
+                                <i class="footer__item-icon fa-brands fa-square-instagram"></i>
+                                Instargram
+                            </a>
+                        </li>
+                        <li class="footer__list-item">    
+                            <a href="" class="footer__list-link">
+                                <i class="footer__item-icon fa-brands fa-linkedin"></i>
+                                Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col c-3">
+                    <h3 class="footer__heading">Mua xe trên ứng dụng</h3>
+                    <div class="footer__download">
+                        <img src="./Assets/Images/qr_code.png" alt="Download QR" class="footer__download-qr">
+                        <div class="footer__download-apps">
+                            <a href="" class="footer__download-apps-link">
+                                <img src="./Assets/Images/gg_play.png" alt="Google Play" class="footer__download-app-img">
+                            </a>
+                            <a href="" class="footer__download-apps-link">
+                                <img src="./Assets/Images/app_store.png" alt="App store" class="footer__download-app-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="grid wide">
+                <p class="footer__text">©2022 Bản quyền thuộc về FastMotor</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./Assets/JavaScript/javascript.js"></script>
+</body>
+</html>
