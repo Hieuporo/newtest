@@ -144,7 +144,6 @@ ul {
 
 .navbar-main-item {
     display: inline-block;
-    cursor: pointer;
 }
 
 .navbar-main-item-link {
@@ -311,6 +310,14 @@ ul {
     color: white;
 }
 
+.product-info{
+    width: 70%;
+    
+}
+
+.main-info{
+    width: 100%;
+}
 
 
 .search{
@@ -473,7 +480,7 @@ ul {
 
 
 .search-input{
-    margin-left: 280px;
+    margin-left: 200px;
     display: flex;
 
 }
@@ -507,7 +514,7 @@ ul {
 }
 
 .car{
-    width: 85%;
+    width: 95%;
     height: 100%;
     margin: 0;
     display: flex;
@@ -692,7 +699,6 @@ ul {
     padding-left: 12px;
     transition: all 1s;
     /* display: none; */
-    cursor: pointer;
     
 }
 
@@ -700,7 +706,6 @@ ul {
 
 .see-more{
     color: #BF5700;
-    cursor: pointer;
 }
 
 
