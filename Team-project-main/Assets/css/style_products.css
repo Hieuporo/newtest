@@ -203,6 +203,8 @@ html {
   display: flex;
   margin-top: 140px;
   margin-bottom: 40px;
+  margin-left: 12px;
+    margin-right: 12px;
 }
 /* slider */
 .content-slider {
